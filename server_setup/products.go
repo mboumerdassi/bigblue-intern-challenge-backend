@@ -68,7 +68,7 @@ var products = []*Product{
 func Handler(w http.ResponseWriter, r *http.Request) {
 
 	//// TODO
-	//// Add code to 
+	//// Add code to get the list of product
 	b, err := json.Marshal(&ProductsResponse{
 		Products: products,
 	})
