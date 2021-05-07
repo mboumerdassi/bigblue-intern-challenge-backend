@@ -2,13 +2,6 @@
 
 # Server Setup
 
-Start the server by using the command run main.go in the server_setup directory.
-It will start a server listening at http://localhost:8080/.
-The endpoint to get the list of products is http://localhost:8080/products. 
-
-TODO: add distinct image url for each product.
-
-# Calling the server
-
-A short code to see how we can call this API to get the list of products.
-The idea is that this code should be merged within the frontend part.
+Download this repository.
+To start the server, open a terminal, go to the repo's root and run the following command: run main.go.
+You can now start coding!

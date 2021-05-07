@@ -66,9 +66,6 @@ var products = []*Product{
 
 // Handler replies with the products response to any request
 func Handler(w http.ResponseWriter, r *http.Request) {
-
-	//// TODO
-	//// Add code to get the list of product
 	b, err := json.Marshal(&ProductsResponse{
 		Products: products,
 	})
@@ -85,12 +82,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-
-
 func main() {
-
-	//// TODO add code to start a local web server at port 8080 that has a simple method
-	//// GET /products that returns a json containing the products
 
 	fmt.Println("Starting server at port 8080. URL: http://localhost:8080/")
 	http.HandleFunc("/products", Handler)
